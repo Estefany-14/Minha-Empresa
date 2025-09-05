@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { SafeAreaView, View, Text, TouchableOpacity, StyleSheet, ScrollView, TextInput, Alert } from "react-native";
-import { Header } from "react-native/Libraries/NewAppScreen";
 
-export default function App () {
+
+export default function App() {
 
   const [pagina, setPagina] = useState('home')
 
@@ -20,6 +20,7 @@ export default function App () {
   );
 }
 
+//olá a function Header
 function Header ({ pagina, setPagina}){
 
   return(
@@ -50,7 +51,7 @@ function Home(){
   );
 }
 
-function Sobre () {
+function Sobre() {
 
   return(
     <View style={styles.section}>
@@ -60,7 +61,7 @@ function Sobre () {
   );
 }
 
-function Serviços () {
+function Servicos() {
 
   return (
     <View style={styles. section}>
@@ -72,13 +73,13 @@ function Serviços () {
   );
 }
 
-function Contato () {
+function Contato() {
   const [nome, setNome] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [ mensagem, setMensagem] = React.useState('');
 
 
-  function enviar (){
+  function enviar() {
     if (!nome || !email || !mensagem){
       Alert.alert('Erro', 'Por favor preencha todos os campos');
       
@@ -121,7 +122,7 @@ function Contato () {
   );
 }
 
-function Footer (){
+function Footer(){
    return (
     <View style={styles.footer}>
       <Text style={{color: 'white'}}>2025 Minha Empresa. Todos os direitos  reservados.</Text>
